@@ -15,7 +15,7 @@ float floatType;
 
 printf("Size of a char: %zu bytes(s)\n", sizeof(charType));
 
-printf("Size of an int: %zu bytes\n(s)", sizeof(intType));
+printf("Size of an int: %zu bytes(s)\n", sizeof(intType));
 
 printf("Size of a long int: %zu bytes(s)\n", sizeof(longintType));
 
