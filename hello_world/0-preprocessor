@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -o hello_world.c=CFILE
+gcc -E .c=CFILE
