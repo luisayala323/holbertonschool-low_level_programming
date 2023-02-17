@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point "Write a C program that prints the size of various types
+ * main - entry point "Write a C program that prints the size of various types"
  * Return: 0
  */
 int main(void)
