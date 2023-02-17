@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
  * main - entry point "Write a C program that prints the size of various types"
@@ -7,6 +7,11 @@
 
 int main(void)
 {
+int intType;
+float floatType;
+double doubleType;
+char charType;
+
 printf("Size of int: %zu bytes\n", sizeof(intType));
 
 printf("Size of float: %zu bytes\n", sizeof(floatType));
