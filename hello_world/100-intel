@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ -S -masm=intel foobar.cpp $CFILE
+gcc -g -Wa,-adhln -fverbose-asm $CFILE > $CFILE
