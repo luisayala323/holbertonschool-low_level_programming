@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - entry" point  program that prints
+ * imain - entry "program that prints
  * Return: 1
  */
 int main(void)
