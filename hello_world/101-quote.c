@@ -11,6 +11,5 @@ int main(void)
 	fp = fopen("file.txt", "w");
 	fwrite(str, 1, sizeof(str), fp);
 
-	fclose(fp);
 	return (1);
 }
