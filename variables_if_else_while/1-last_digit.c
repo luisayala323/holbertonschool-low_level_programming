@@ -8,19 +8,17 @@
  */
 int main(void)
 {
-	int n, last;
+        int n, last;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	last = n % 10;
+        srand(time(0));
+        n = rand() - RAND_MAX / 2;
+        last = n % 10;
 
-	printf("Last digit of %d ", n);
-	printf(" is %d", last);
-		if (last > 5)
-	printf("%d and is greater than 5", n);
-		if (last == 0)
-	printf("%d and is 0", n);
-		if (!(last < 6))
-	printf("%d and is less than 6 and not 0\n", n);
-	return (0);
+        if (last > 5)
+                printf("Last digit of %d is %d and is greater than 5\n", n, Last);
+        else if (last == 0)
+                printf("Last digit of %d is %d and is 0\n", n, Last);
+        else if (last < 6)
+                printf("Last digit of %d is %d and is less than 6 and not 0\n", n, Last);
+        return (0);
 }
