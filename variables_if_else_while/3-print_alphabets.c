@@ -5,14 +5,23 @@
  */
 int main (void)
 {
-	char ALFA = 'A';
+	char up  = 'A';
+	char low = 'a';
 
-	while (ALFA <= 'Z')
+	while (low <= 'z')
+	
+	{
+		putchar(low);
+		low++;
+	}
+
+	while (up <= 'Z')
 
 	{
-		putchar(ALFA);
-		ALFA++;
+		putchar(up);
+		up++;
 	}
+
 	putchar('\n');
 	
 	return (0);
