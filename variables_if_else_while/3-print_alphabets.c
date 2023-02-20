@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- * main - Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+ * main - Write a program that prints the alphabet in lowercase, and then in uppercase
  * Return: Always 0
  */
-int main (void)
+int main(void)
 {
 	char up  = 'A';
 	char low = 'a';
 
 	while (low <= 'z')
-	
+
 	{
 		putchar(low);
 		low++;
@@ -23,7 +23,7 @@ int main (void)
 	}
 
 	putchar('\n');
-	
+
 	return (0);
 
 }
