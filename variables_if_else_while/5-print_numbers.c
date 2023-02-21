@@ -10,5 +10,5 @@ int main(void)
 	for (nume = 0; nume < 10; nume++)
 		printf("%d", nume);
 	printf("\n");
-	return(0);
+	return (0);
 }
