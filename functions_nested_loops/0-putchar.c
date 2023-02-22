@@ -1,17 +1,26 @@
-#include <main.h>
+#include "main.h"
+/**
+ *
+ * main -print putchar
+ * Return: 0
+ */
 
-int _putchar
+int main(void)
 
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
+	char name[] = "_putchar";
+	int place;
 
- return (0)
+	for(place = 0; place < 9; place++)
+	{
+		if(name[place] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		else
+		{
+			_putchar(name[place]);
+		}
+		return(0);
 }
