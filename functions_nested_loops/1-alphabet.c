@@ -2,18 +2,18 @@
 #include <unistd.h>
 
 /**
- * prints the alphabet - print lowercase, followed by \n
+ * print_alphabet - print lowercase, followed by \n
  * Return: 0 (success)
  */
 void print_alphabet(void)
 {
-	char l = 'a';
+	char i = 'a';
 
-	while (l <= 'z')
+	while (i <= 'z')
 
 	{
-		_putchar('l');
-		l++;
+		_putchar('i');
+		i++;
 	}
 
 	_putchar('\n');
