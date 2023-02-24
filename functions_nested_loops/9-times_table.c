@@ -1,42 +1,49 @@
 #include "main.h"
 
 /**
- * times_table - print multiplication table
+ * print_times_table - prints times table
+ * @n: times table to use
  * Return: 0
  */
 
-void times_table(void)
+void print_times_table(int n)
 {
-	int row;
-	int column;
-	int product;
+	int a = 0, rep, b;
 
-	for (row = 0; row <= 9; row++)
+	if (n < 0 || n > 15)
+		return;
+	while (a <= n)
 	{
-		for (column = 0; column <= 9; column++)
+		for (b = 0; b <= n; b++)
 		{
-			product = (row * column);
-
-			if (column == 0)
+			rep = a * b;
+			if (b == 0)
+				_putchar('0' + rep);
+			else if (rep < 10)
 			{
-				_putchar('0' + product);
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + rep);
 			}
-			else if (product <= 9)
+			else if (rep < 100)
+			{
+				_putchar(' ');
+				_putchar('0' + rep / 10);
+				_putchar('0' + rep % 10);
+			}
+			else
+			{
+				_putchar('0' + rep / 100);
+				_putchar('0' + (rep - 100) / 10);
+				_putchar('0' + rep % 10);
+			}
+			if (b < n)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
-				_putchar('0' + product);
-			}
-			else if (product > 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar('0' + (product / 10));
-				_putchar('0' + (product % 10));
 			}
 		}
 		_putchar('\n');
+		a++;
 	}
 }
-
