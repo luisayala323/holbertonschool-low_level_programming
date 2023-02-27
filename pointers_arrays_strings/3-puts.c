@@ -1,11 +1,9 @@
- #include "main.h"
- /**
-  * _puts - prints out a string
-  *@*str: printed string
-*/
-
+#include "main.h"
+/**
+ * _puts - prints out a string
+ * @str: printed string
+ */
 void _puts(char *str)
-
 {
 	int i;
 
