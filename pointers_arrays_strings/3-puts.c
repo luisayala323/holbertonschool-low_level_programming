@@ -1,9 +1,11 @@
  #include "main.h"
  /**
-  * _puts - prints a string
-  * @str: string
-  */
+  * _puts - prints out a string
+  *@*str: printed string
+*/
+
 void _puts(char *str)
+
 {
 	int i;
 
@@ -13,4 +15,3 @@ void _puts(char *str)
 	}
 	_putchar('\n');
 }
-
