@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *
- *
+ * print_rev - reverse string
+ * @s: pointer
+ * Return: void
  */
 void print_rev(char *s)
 {
@@ -11,7 +12,7 @@ void print_rev(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
-	min = i -1;
+	min = i - 1;
 	for (; min >= 0; min--)
 	{
 		_putchar(s[min]);
