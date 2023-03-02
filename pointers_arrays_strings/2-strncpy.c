@@ -4,17 +4,21 @@
  * @dest: string
  * @src: string
  * @n: int
- * Return: 0
+ * Return: pointer dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
+	int i = 0;
+	int len = 0;
 
-	for (n = 0; dest[n] != '\0'; n++)
-	{
-		src[n] = dest[n];
-	}
-	
-	src[n] = '\0';
+	while (src[i++])
+		len++;
 
-	return (0);
+	for (i = 0; src[i] && i < n; i++)
+		dest[1] = src[i];
+
+	for (i = len; i < n; i++)
+		dest[i] = '\0';
+
+	return (dest);
 }
