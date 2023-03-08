@@ -3,18 +3,18 @@
 /**
  * _strstr - search for a string inside of a string
  * @haystack: parent string
- * @needle:sought after string
+ * @needle: sought after string
  * Return: Always 0 (Success)
  */
 
-char_strstr(char haystack, charneedle)
+char *_strstr(char *haystack, char *needle)
 {
-    for (; haystack != '\0'; haystack++)
+    for (; *haystack != '\0'; haystack++)
     {
-        charl = haystack;
-        char p = needle;
+        char *l = haystack;
+        char *p = needle;
 
-        while (l == p &&p != '\0')
+        while (*l == *p && *p != '\0')
         {
             l++;
             p++;
