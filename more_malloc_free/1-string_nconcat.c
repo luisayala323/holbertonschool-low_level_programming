@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * string_nconcat
+ * string_nconcat - concatenates two strings
  * @s1: string 1
  * @s2: string 2
  * @n: 6
@@ -36,10 +36,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	for (i = 0; i < len1; i++)
-	   	concat[i] = s1[i];
-
+		concat[i] = s1[i];
 	len2 = 0;
-	
+
 	for (j = i; j < (len1 + n); j++)
 	{
 		concat[j] = s2[len2];
@@ -47,6 +46,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	concat[j] = '\0';
-	
-		return (concat);
+	return (concat);
 }
