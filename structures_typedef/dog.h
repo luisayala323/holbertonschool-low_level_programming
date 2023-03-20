@@ -1,15 +1,19 @@
+#ifndef dog_h
+#define dog_h
+
 /**
  * struct dog - a dog
- * @char*: name variable
- * @float: age variable
- * @char*: owner variable
+ * @name: variable
+ * @age: variable
+ * @owner: variable
  *
  * Description: new type with following element
  */
-
 struct dog
 {
-  char* name;
-  float age;
-  char* owner;
+char *name;
+float age;
+char *owner;
 };
+
+#endif
