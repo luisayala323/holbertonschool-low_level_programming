@@ -7,7 +7,7 @@
  * @name: variable
  * @age: variable
  * @owner: variable
- * @*d: pointer
+ * @d: pointer variable
  * Description: variables typedef
  */
 
