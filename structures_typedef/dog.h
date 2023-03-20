@@ -1,8 +1,8 @@
 /**
  * struct dog - a dog
- * @char*
- * @float
- * @char*
+ * @char*: name variable
+ * @float: age variable
+ * @char*: owner variable
  *
  * Description: new type with following element
  */
