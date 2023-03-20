@@ -8,6 +8,7 @@
  * @age: variable
  * @owner: variable
  * @*d: pointer
+ * Description: variables typedef
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
