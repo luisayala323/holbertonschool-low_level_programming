@@ -51,8 +51,3 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	return (new_node);
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-
-
